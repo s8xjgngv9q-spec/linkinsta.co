@@ -7,5 +7,30 @@
 <body>
   <h1>LinkInsta yayında 🚀</h1>
   <p>Instagram link takip aracı</p>
+
+  <input
+    type="text"
+    placeholder="Instagram linkini buraya yapıştır..."
+    style="width:90%;max-width:400px;padding:12px;font-size:16px;margin-top:20px;"
+    id="iglink"
+  />
+
+  <br><br>
+
+  <button
+    onclick="analyze()"
+    style="padding:12px 24px;font-size:16px;"
+  >
+    Analiz Et
+  </button>
+
+  <p id="result" style="margin-top:20px;"></p>
+
+  <script>
+    function analyze() {
+      const val = document.getElementById("iglink").value;
+      document.getElementById("result").innerText =
+        "Link alındı: " + val;
+    }
+  </script>
 </body>
-</html>
